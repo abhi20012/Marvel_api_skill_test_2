@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Super Hero Hunter App</title>
+	<!-- Style Css file -->
+	<link rel="stylesheet" href="./style.css">
+	<!-- <link rel="stylesheet" href="./character.css"> -->
+</head>
+
+<body>
+	<div class="container">
+		<div class="navbar">
+			<img src="./Marvel_Logo.svg.png" alt="logo" class="logo" id="logo">
+			<nav>
+					<div class="search-section">
+						<input type="text" placeholder="Search character" id="searchBox" />
+						<input type="button" value="Search" id="searchBtn" />
+					</div>
+					<ul>
+						<li><a href="./favourite.html">Favourite</a></li>
+						<li><a href="./favourite.html"><i class="fa-regular fa-heart"></i></a></li>
+					</ul>
+			</nav>
+		</div>
+
+		<!-- search-result section -->
+		<section>
+			<div id="searchResult">
+			  
+			</div>
+		</section>
+
+		<!-- characters display using Marvels API -->
+		<section class="character-section">
+			<h2>characters :</h2>
+			<div class="characters" id="characters-container">
+			  <h2>Loading...</h2>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- font awesome script -->
+	<script src="https://kit.fontawesome.com/5822b6fbea.js" crossorigin="anonymous"></script>
+	<!-- java script for apis -->
+	<script src="./javascript/home.js"></script>
+    <script src="./javascript/addFavourite.js"></script>
+</body>
+
+</html>
